@@ -79,7 +79,7 @@ struct SettingsView: View {
                 
                 UIApplication.shared.setAlternateIconName(alternateAppIcons[item]) { (error) in
                   if let error = error {
-                    print("Failed to update the app's icon: \(String(describing: erro?.localizedDescription))")
+                    print("Failed to update the app's icon: \(String(describing: error.localizedDescription))")
                   } else {
                     print("Successfully updated the app icon")
                   }
